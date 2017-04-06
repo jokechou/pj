@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>员工薪资</title>
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="Font-Awesome-3.2.1/css/font-awesome.min.css" rel="stylesheet"/>
+
+		<style>
+
+			nav{
+				padding: 10px 0;
+			}
+
+			.navbar-brand{
+				font-size: 25px;
+			}
+
+			#nav-right{
+				margin-right:10px ;
+			}
+
+
+            #nav-right li a{
+                font-size: 18px;
+            }
+
+            .panel-title{
+                font-size: 20px;
+            }
+                      
+																		
+			a:link,a:visited,a:hover,a:active{
+				text-decoration: none;
+			}
+			
+			.path{
+				font-size: 16px;
+				margin-top: 12px;
+			}
+			
+		</style>
+		
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse" role="navigation">  <!--顶部导航条-->
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="index.html"><span class="icon-star"></span> JKC-system</a>
+				</div>	
+				<div>				
+					<ul class="nav navbar-nav navbar-right" id="nav-right">
+						<li><a href="###" style="font-size: 15px;">现在是 <span>2017年3月20日 10:44</span></a></li>
+						<li><a href="#" title="信息"><span class="icon-envelope"> </span><span class="badge" style="background-color: red;">42</span></a></li>
+			            <li class="dropdown">
+			                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+			                    <span class="icon-user"></span> 用户名 <span class="caret"></span>
+			                </a>
+			                <ul class="dropdown-menu">
+			                    <li><a href="#"><span class="icon-home"></span> 个人主页</a></li>
+			                    <li><a href="#"><span class="icon-pencil"></span> 基本资料</a></li>
+			                    <li><a href="#"><span class="icon-lock"></span> 更换密码</a></li>
+			                    <li class="divider"></li>
+			                    <li><a href="#"><span class="icon-signout"></span> 退出</a></li>
+			                </ul>
+			            </li>
+			            <li><a href="###" title="刷新"><span class="icon-refresh"></span></a></li>
+			        </ul>
+				</div>
+			</div>
+		</nav>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="panel-group col-md-2" id="accordion" role="tablist" aria-multiselectable="true" > <!--左侧导航-->
+                  <div class="panel panel-info">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                      <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          <span class="icon-briefcase"></span> 人事档案 <span class="icon-angle-down"></span>
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                      <div class="panel-body">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li><a href="yuangongxinxi.html"><span class="icon-caret-right"></span> 员工信息</a></li>
+                            <li><a href=""><span class="icon-caret-right"></span> 人员构成</a></li>
+                            <li><a href="xinxifabu.html"><span class="icon-caret-right"></span> 信息发布</a></li>
+                            <li><a href="lizhiguanli.html"><span class="icon-caret-right"></span> 离职管理</a></li>
+                            <li><a href="gongzuoshenpi.html"><span class="icon-caret-right"></span> 工作审批</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-info">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          <span class="icon-time"></span> 考勤管理 <span class="icon-angle-down"></span>
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                      <div class="panel-body">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li><a href="yuangongpaiban.html"><span class="icon-caret-right"></span> 员工排班</a></li>
+                            <li><a href="kaoqinhuizong.html"><span class="icon-caret-right"></span> 考勤汇总</a></li>
+                            <li><a href="xiujiashenpi.html"><span class="icon-caret-right"></span> 休假审批</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-info">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          <span class="icon-exchange"></span> 薪酬管理 <span class="icon-angle-down"></span>
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                      <div class="panel-body">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li><a href="yuangongxinzi.html"><span class="icon-caret-right"></span> 员工薪资</a></li>
+                            <li><a href=""><span class="icon-caret-right"></span> 奖罚管理</a></li>
+                            <li><a href=""><span class="icon-caret-right"></span> 员工福利</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-info">
+                    <div class="panel-heading" role="tab" id="headingFour">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                          <span class="icon-group"></span> 招聘管理 <span class="icon-angle-down"></span>
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                      <div class="panel-body">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li><a href=""><span class="icon-caret-right"></span> 招聘计划</a></li>
+                            <li><a href=""><span class="icon-caret-right"></span> 应聘简历</a></li>
+                            <li><a href=""><span class="icon-caret-right"></span> 面试情况</a></li>
+                            <li><a href=""><span class="icon-caret-right"></span> 招聘公告</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-info">
+                    <div class="panel-heading" role="tab" id="headingFive">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                          <span class="icon-tasks"></span> 组织架构 <span class="icon-angle-down"></span>
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                      <div class="panel-body">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li><a href=""><span class="icon-caret-right"></span> 部门管理</a></li>
+                            <li><a href=""><span class="icon-caret-right"></span> 人员调动</a></li>
+                            <li><a href=""><span class="icon-caret-right"></span> 能力鉴定</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-info">
+                    <div class="panel-heading" role="tab" id="headingSix">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                          <span class="icon-user"></span> 权限管理 <span class="icon-angle-down"></span>
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                      <div class="panel-body">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li><a href=""><span class="icon-caret-right"></span> 角色管理</a></li>
+                            <li><a href=""><span class="icon-caret-right"></span> 用户管理</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-info">
+                    <div class="panel-heading" role="tab" id="headingSix">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button"  data-parent="#accordion"  aria-expanded="false">
+                          <span class="icon-envelope"></span> 系统信息 <span class="badge" style="background-color: red;">10</span>
+                        </a>
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="panel panel-info">
+                    <div class="panel-heading" role="tab" id="headingSix">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button"  data-parent="#accordion"  aria-expanded="false">
+                          <span class="icon-signout"></span> 退出
+                        </a>
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-md-10"> <!--主页右侧内容-->
+                	<div class="container-fluid">
+                		<div class="row" style="border-bottom: 1px solid rgb(221,221,221);">
+		                    	<h3>
+		                    		<span class="icon-money" style="color: indianred;"></span> 员工薪资
+		                    		<small style>/Salary</small>
+		                    	</h3>      	
+	                    </div>
+	                    
+	                    <div class="row path">	<!--路径导航-->
+	                		<ol class="breadcrumb">
+								<li><a href="index.html">我的主页</a></li>
+								<li class="active">薪酬管理</li>
+								<li class="active">员工薪资</li>
+							</ol>
+	                	</div>
+	                	
+	                	<div class="row">	<!--员工薪资明细-->
+	                		<div class="col-md-8">
+	                			<div>
+		                			<div class="btn-group">
+										<button type="button" class="btn btn-default">状态</button>
+										<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										    <span class="caret"></span>
+										    <span class="sr-only">Toggle Dropdown</span>
+										</button>
+										<ul class="dropdown-menu">
+										    <li><a href="#">已发</a></li>
+										    <li><a href="#">未发</a></li>
+										</ul>
+									</div>
+	                			
+		                			<div class="btn-group">
+										<button type="button" class="btn btn-default">选择日期</button>
+										<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										    <span class="caret"></span>
+										    <span class="sr-only">Toggle Dropdown</span>
+										</button>
+										<ul class="dropdown-menu">
+										    <li><a href="#">2017年4月</a></li>
+										    <li><a href="#">2017年3月</a></li>
+										    <li><a href="#">2017年2月</a></li>
+										    <li><a href="#">2017年1月</a></li>
+										</ul>
+									</div>
+									<a href="javascript:window.print();" class="btn btn-warning"><span class="icon-print"></span> 打印报表</a>
+								</div>
+								<br />
+	                			
+		                		<div class="panel panel-default">
+									<div class="panel-heading" style="color: black;">员工薪资 </div>
+									<table class="table table-hover table-bordered table-responsive">
+										<tr>
+											<th>员工编号</th>
+											<th>姓名</th>
+											<th>职位</th>
+											<th>银行卡信息</th>
+											<th>实发工资</th>
+											<th>工资状态</th>
+											<th>操作</th>
+										</tr>
+										<tr>
+											<td>123456</td>
+											<td><a href="###" title="打开查看详细内容">孙统领</a></td>
+											<td>带笔、带纸</td>
+											<td>6666654645154565</td>
+											<td>8888</td>
+											<td>未发</td>
+											<td>
+												<div class="dropdown">
+													<button class="btn btn-success btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+													    操作
+													    <span class="caret"></span>
+													</button>
+													<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+														<li><a href="#">详情</a></li>
+														<li class="divider"></li>
+													    <li><a href="#">修改</a></li>
+													    <li><a href="#">删除</a></li>
+													</ul>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>123456</td>
+											<td><a href="###" title="打开查看详细内容">孙统领</a></td>
+											<td>带笔、带纸</td>
+											<td>6666654645154565</td>
+											<td>8888</td>
+											<td>未发</td>
+											<td>
+												<div class="dropdown">
+													<button class="btn btn-success btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+													    操作
+													    <span class="caret"></span>
+													</button>
+													<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+														<li><a href="#">详情</a></li>
+														<li class="divider"></li>
+													    <li><a href="#">修改</a></li>
+													    <li><a href="#">删除</a></li>
+													</ul>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>123456</td>
+											<td><a href="###" title="打开查看详细内容">孙统领</a></td>
+											<td>带笔、带纸</td>
+											<td>6666654645154565</td>
+											<td>8888</td>
+											<td>未发</td>
+											<td>
+												<div class="dropdown">
+													<button class="btn btn-success btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+													    操作
+													    <span class="caret"></span>
+													</button>
+													<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+														<li><a href="#">详情</a></li>
+														<li class="divider"></li>
+													    <li><a href="#">修改</a></li>
+													    <li><a href="#">删除</a></li>
+													</ul>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>123456</td>
+											<td><a href="###" title="打开查看详细内容">孙统领</a></td>
+											<td>带笔、带纸</td>
+											<td>6666654645154565</td>
+											<td>8888</td>
+											<td>未发</td>
+											<td>
+												<div class="dropdown">
+													<button class="btn btn-success btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+													    操作
+													    <span class="caret"></span>
+													</button>
+													<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+														<li><a href="#">详情</a></li>
+														<li class="divider"></li>
+													    <li><a href="#">修改</a></li>
+													    <li><a href="#">删除</a></li>
+													</ul>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>123456</td>
+											<td><a href="###" title="打开查看详细内容">孙统领</a></td>
+											<td>带笔、带纸</td>
+											<td>6666654645154565</td>
+											<td>8888</td>
+											<td>未发</td>
+											<td>
+												<div class="dropdown">
+													<button class="btn btn-success btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+													    操作
+													    <span class="caret"></span>
+													</button>
+													<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+														<li><a href="#">详情</a></li>
+														<li class="divider"></li>
+													    <li><a href="#">修改</a></li>
+													    <li><a href="#">删除</a></li>
+													</ul>
+												</div>
+											</td>
+										</tr>
+									</table>
+								</div>
+								<nav aria-label="Page navigation" class="pull-right">
+									<ul class="pagination">
+									    <li>
+									      <a href="#" aria-label="Previous">
+									        <span aria-hidden="true">&laquo;</span>
+									      </a>
+									    </li>
+									    <li class="active"><a href="#">1</a></li>
+									    <li><a href="#">2</a></li>
+									    <li><a href="#">3</a></li>
+									    <li><a href="#">4</a></li>
+									    <li><a href="#">5</a></li>
+									    <li>
+									      <a href="#" aria-label="Next">
+									        <span aria-hidden="true">&raquo;</span>
+									      </a>
+									    </li>
+									</ul>
+								</nav>
+								<div class="clearfix"></div>
+							</div>
+							<div class="col-md-4">	<!--右侧提示语-->
+								<div class="alert alert-info alert-dismissable">
+									<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+									<strong style="font-size: 15px; color: red">实发工资</strong>是综合了基本工资、考勤、加班费、绩效等因素计算得出的结果。
+									<h5 class="text-danger">通过点击操作里的详情可以查看员工薪资的详细情况。</h5>
+								</div>
+								
+								<div class="alert alert-success" style="color: black;">
+									基本薪资：1小时100<br />
+									迟到：1次扣100 <br />
+									加班费：1小时额外加100<br />
+									绩效：自定义<br />
+									实发工资=应发工资-缺勤-行政处罚-养老保险-代缴税款<br /><br />
+									
+									<a href="###" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal"><span class="icon-edit"></span> 自定义规则</a>
+									
+									<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+										<div class="modal-dialog" role="document">
+										    <div class="modal-content">
+											    <div class="modal-header">
+											        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+											        <h4 class="modal-title" id="myModalLabel">薪资定义</h4>
+											    </div>
+											    <div class="modal-body">
+											    	<form class="form-horizontal">
+														  <div class="form-group">
+														    <label for="title" class="col-sm-2 control-label">标题</label>
+														    <div class="col-sm-10">
+														      	<input type="text" class="form-control" id="title" placeholder="标题">
+														    </div>
+														  </div>
+														  <div class="form-group">
+														    <label for="txt" class="col-sm-2 control-label">内容</label>
+														    <div class="col-sm-10">
+														      	<textarea class="form-control" id="txt" placeholder="输入文本内容"></textarea>
+														    </div>
+														  </div>
+														  <div class="form-group">
+														    <label for="date" class="col-sm-2 control-label">执行日期</label>
+														    <div class="col-sm-10">
+														      	<input type="text" class="form-control" id="date" placeholder="填写事项执行时间"/>
+														    </div>	
+														  </div>
+														  <div class="form-group">
+														    <label for="ps" class="col-sm-2 control-label">备注</label>
+														    <div class="col-sm-10">
+														      	<input type="text" class="form-control" id="ps" placeholder="事务备注"/>
+														    </div>	
+														  </div>
+														  <div class="form-group">
+														    <div class="col-sm-offset-2 col-sm-10">
+														      <button type="submit" class="btn btn-primary">保存</button>
+														    </div>
+														  </div>
+													</form>   
+											    </div>
+											    <div class="modal-footer">
+											        <a type="button" class="btn btn-default" data-dismiss="modal">关闭</a>
+											        <a type="button" class="btn btn-info" href="###">重置</a>
+											    </div>
+										    </div>
+										  </div>
+									</div>
+								</div>
+
+							</div>
+	                	</div>
+                	</div>
+                </div>	
+                
+            </div>  <!--row--> 
+            
+            <div class="row"> <!--底部版权-->
+            	<div class="col-md-12 text-center navbar-static-bottom" style="background: rgb(153,153,153); color: black; padding:5px 0;">
+            		Copyright 2017 CHOU TAI FOOK All Rights Reserved.
+            	</div>
+            </div>
+	   </div>	
+
+		
+		<script src="jquery/jquery.min.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+	</body>
+</html>

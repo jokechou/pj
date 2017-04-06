@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>角色列表</title>
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="Font-Awesome-3.2.1/css/font-awesome.min.css" rel="stylesheet"/>
+
+		<style>
+
+			nav{
+				padding: 10px 0;
+			}
+
+			.navbar-brand{
+				font-size: 25px;
+			}
+
+			#nav-right{
+				margin-right:10px ;
+			}
+
+
+      #nav-right li a{
+        font-size: 18px;
+      }
+
+      .panel-title{
+        font-size: 20px;
+      }
+                      
+																		
+			a:link,a:visited,a:hover,a:active{
+				text-decoration: none;
+			}
+
+      .path{
+         font-size: 16px;
+         margin-top: 12px;
+      }
+			
+		</style>
+		
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse" role="navigation">  <!--顶部导航条-->
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="index.html"><span class="icon-star"></span> JKC-system</a>
+				</div>	
+				<div>				
+					<ul class="nav navbar-nav navbar-right" id="nav-right">
+						<li><a href="###" style="font-size: 15px;">现在是 <span>2017年3月20日 10:44</span></a></li>
+						<li><a href="#" title="信息"><span class="icon-envelope"> </span><span class="badge" style="background-color: red;">42</span></a></li>
+			            <li class="dropdown">
+			                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+			                    <span class="icon-user"></span> 用户名 <span class="caret"></span>
+			                </a>
+			                <ul class="dropdown-menu">
+			                    <li><a href="#"><span class="icon-home"></span> 个人主页</a></li>
+			                    <li><a href="#"><span class="icon-pencil"></span> 基本资料</a></li>
+			                    <li><a href="#"><span class="icon-lock"></span> 更换密码</a></li>
+			                    <li class="divider"></li>
+			                    <li><a href="#"><span class="icon-signout"></span> 退出</a></li>
+			                </ul>
+			            </li>
+			            <li><a href="###" title="刷新"><span class="icon-refresh"></span></a></li>
+			        </ul>
+				</div>
+			</div>
+		</nav>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="panel-group col-md-2" id="accordion" role="tablist" aria-multiselectable="true" > <!--左侧导航-->
+                  <div class="panel panel-info">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                      <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          <span class="icon-briefcase"></span> 人事档案 <span class="icon-angle-down"></span>
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                      <div class="panel-body">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li><a href=""><span class="icon-caret-right"></span> 员工信息</a></li>
+                            <li><a href=""><span class="icon-caret-right"></span> 人员构成</a></li>
+                            <li><a href=""><span class="icon-caret-right"></span> 信息发布</a></li>
+                            <li><a href=""><span class="icon-caret-right"></span> 离职管理</a></li>
+                            <li><a href=""><span class="icon-caret-right"></span> 工作审批</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-info">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          <span class="icon-time"></span> 考勤管理 <span class="icon-angle-down"></span>
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                      <div class="panel-body">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li><a href=""><span class="icon-caret-right"></span> 员工排班</a></li>
+                            <li><a href=""><span class="icon-caret-right"></span> 考勤汇总</a></li>
+                            <li><a href=""><span class="icon-caret-right"></span> 休假审批</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-info">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          <span class="icon-exchange"></span> 薪酬管理 <span class="icon-angle-down"></span>
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                      <div class="panel-body">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li><a href=""><span class="icon-caret-right"></span> 员工薪资</a></li>
+                            <li><a href=""><span class="icon-caret-right"></span> 奖罚管理</a></li>
+                            <li><a href=""><span class="icon-caret-right"></span> 员工福利</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-info">
+                    <div class="panel-heading" role="tab" id="headingFour">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                          <span class="icon-group"></span> 招聘管理 <span class="icon-angle-down"></span>
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                      <div class="panel-body">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li><a href=""><span class="icon-caret-right"></span> 招聘计划</a></li>
+                            <li><a href=""><span class="icon-caret-right"></span> 应聘简历</a></li>
+                            <li><a href=""><span class="icon-caret-right"></span> 面试情况</a></li>
+                            <li><a href=""><span class="icon-caret-right"></span> 招聘公告</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-info">
+                    <div class="panel-heading" role="tab" id="headingFive">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                          <span class="icon-tasks"></span> 组织架构 <span class="icon-angle-down"></span>
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                      <div class="panel-body">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li><a href=""><span class="icon-caret-right"></span> 部门管理</a></li>
+                            <li><a href=""><span class="icon-caret-right"></span> 人员调动</a></li>
+                            <li><a href=""><span class="icon-caret-right"></span> 能力鉴定</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-info">
+                    <div class="panel-heading" role="tab" id="headingSix">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                          <span class="icon-user"></span> 权限管理 <span class="icon-angle-down"></span>
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                      <div class="panel-body">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li><a href=""><span class="icon-caret-right"></span> 角色管理</a></li>
+                            <li><a href=""><span class="icon-caret-right"></span> 用户管理</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-info">
+                    <div class="panel-heading" role="tab" id="headingSix">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button"  data-parent="#accordion"  aria-expanded="false">
+                          <span class="icon-envelope"></span> 系统信息 <span class="badge" style="background-color: red;">10</span>
+                        </a>
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="panel panel-info">
+                    <div class="panel-heading" role="tab" id="headingSix">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button"  data-parent="#accordion"  aria-expanded="false">
+                          <span class="icon-signout"></span> 退出
+                        </a>
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-md-10"> <!--主页右侧内容-->
+                	<div class="container-fluid">
+                		  <div class="row" style="border-bottom: 1px solid rgb(221,221,221);">
+		                    	<h3>
+		                    		<span class="icon-user" style="color: black;"></span> 角色列表
+		                    		<small style>/Roles</small>
+		                    	</h3>      	
+	                    </div>
+
+                      <div class="row path">  <!--路径导航-->
+                          <ol class="breadcrumb">
+                              <li><a href="index.html">我的主页</a></li>
+                              <li class="active">权限管理</li>
+                              <li class="active">角色列表</li>
+                          </ol>
+                      </div>
+                      
+                      <div class="row">       
+                        <div class="panel panel-default">
+                          <div class="panel-body">
+                              <br/>
+                              <div class="row">
+                                  <div class="col-md-8">
+                                      <div class="form-group form-inline">
+                                          <label for="role">角色名称</label>
+                                          <input type="text" class="form-control" id="role" placeholder="输入角色名称">
+                                          <a href="###" class="btn btn-danger"><span class="icon-search"></span> 查询</a>
+                                          <a href="###" class="btn btn-success" data-toggle="modal" data-target="#add"><span class="icon-plus"></span> 新增</a>
+
+                                          
+                                          <small style="font-size: 15px;">记录数：<span class="text-danger">10</span></small>
+                                      </div>
+                                  </div>
+                              </div>
+                              <br/>
+                              <div class="row-fluid">
+                                  <table class="table table-bordered table-responsive">
+                                      <tr class="active">
+                                          <th>序号</th>
+                                          <th>名称</th>
+                                          <th>描述</th>
+                                          <th>创建时间</th>
+                                          <th>状态</th>
+                                          <th>操作</th>
+                                      </tr>
+                                      <tr>
+                                          <td>1</td>
+                                          <td>超级管理员</td>
+                                          <td>拥有最高权限</td>
+                                          <td>2017/3/25</td>
+                                          <td>禁用</td>
+                                          <td>
+                                              <a href="###" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal"><span class="icon-edit"></span> 编辑</a>
+                                              <a href="###" class="btn btn-default btn-sm"><span class="icon-ban-circle"></span> 禁用</a>
+                                              <a href="###" class="btn btn-default btn-sm"><span class="icon-trash"></span> 删除</a>
+                                              <!-- Modal -->
+                                              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                                <div class="modal-dialog" role="document">
+                                                  <div class="modal-content">
+                                                    <div class="modal-header">
+                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                      <h3 class="modal-title" id="myModalLabel">修改角色</h3>
+                                                    </div>
+                                                    <br>
+                                                    <div class="modal-body">
+                                                      <form>
+                                                          <div class="form-group">
+                                                            <label for="role-name"><span style="color: red;">* </span>角色名称</label>
+                                                            <input type="text" class="form-control" id="role-name" placeholder="角色名">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <label for="describe">描述</label>
+                                                            <textarea class="form-control" id="describe" placeholder="描述内容"></textarea>
+                                                          </div>
+                                                          <br>
+                                                          <div class="form-group">
+                                                            <div class="col-sm-offset-4 col-sm-8">
+                                                              <button type="submit" class="btn btn-primary">确定</button>
+                                                              <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                                                            </div>
+                                                        </div>
+                                                        </form>
+                                                        <br>
+                                                    </div>
+                                                    <br>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>2</td>
+                                          <td>普通管理员</td>
+                                          <td>可以管理用户</td>
+                                          <td>2017/3/25</td>
+                                          <td>启用</td>
+                                          <td>
+                                              <a href="###" class="btn btn-default btn-sm"><span class="icon-edit"></span> 编辑</a>
+                                              <a href="###" class="btn btn-default btn-sm"><span class="icon-ban-circle"></span> 禁用</a>
+                                              <a href="###" class="btn btn-default btn-sm"><span class="icon-trash"></span> 删除</a>
+                                          </td>
+                                      </tr>
+                                  </table>
+                              </div>
+                              <br/>
+                          </div>
+                        </div>
+                	   </div>
+                  </div>	
+               </div> 
+            </div>  <!--row--> 
+
+            <div class="modal fade" id="add" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h3 class="modal-title" id="myModalLabel">添加角色</h3>
+                      </div>
+                      <br>
+                      <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                              <label for="role-name2"><span style="color: red;">* </span>角色名称</label>
+                              <input type="text" class="form-control" id="role-name2" placeholder="角色名">
+                            </div>
+                            <div class="form-group">
+                              <label for="describe">描述</label>
+                              <textarea class="form-control" id="describe" placeholder="描述内容"></textarea>
+                            </div>
+                            <br>
+                            <div class="form-group">
+                              <div class="col-sm-offset-4 col-sm-8">
+                                <button type="submit" class="btn btn-primary">添加</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                              </div>
+                            </div>
+                          </form>
+                          <br>
+                      </div>
+                      <br/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row"> <!--底部版权-->
+            	<div class="col-md-12 text-center navbar-static-bottom" style="background: rgb(153,153,153); color: black; padding:5px 0;">
+            		Copyright 2017 CHOU TAI FOOK All Rights Reserved.
+            	</div>
+            </div>
+	   </div>	
+
+		
+		<script src="jquery/jquery.min.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+	</body>
+</html>

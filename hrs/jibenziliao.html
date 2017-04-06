@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>基本资料</title>
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="Font-Awesome-3.2.1/css/font-awesome.min.css" rel="stylesheet"/>
+
+		<style>
+
+			nav{
+				padding: 10px 0;
+			}
+
+			.navbar-brand{
+				font-size: 25px;
+			}
+
+			#nav-right{
+				margin-right:10px ;
+			}
+
+
+      #nav-right li a{
+        font-size: 18px;
+      }
+
+      .panel-title{
+        font-size: 20px;
+      }
+                      
+																		
+			a:link,a:visited,a:hover,a:active{
+				text-decoration: none;
+			}
+			
+		</style>
+		
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse" role="navigation">  <!--顶部导航条-->
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="index.html"><span class="icon-star"></span> JKC-system</a>
+				</div>	
+				<div>				
+					<ul class="nav navbar-nav navbar-right" id="nav-right">
+						<li><a href="###" style="font-size: 15px;">现在是 <span>2017年3月20日 10:44</span></a></li>
+						<li><a href="#" title="信息"><span class="icon-envelope"> </span><span class="badge" style="background-color: red;">42</span></a></li>
+			            <li class="dropdown">
+			                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+			                    <span class="icon-user"></span> 用户名 <span class="caret"></span>
+			                </a>
+			                <ul class="dropdown-menu">
+			                    <li><a href="#"><span class="icon-home"></span> 个人主页</a></li>
+			                    <li><a href="#"><span class="icon-pencil"></span> 基本资料</a></li>
+			                    <li><a href="#"><span class="icon-lock"></span> 更换密码</a></li>
+			                    <li class="divider"></li>
+			                    <li><a href="#"><span class="icon-signout"></span> 退出</a></li>
+			                </ul>
+			            </li>
+			            <li><a href="javascript:history.go(0);" title="刷新"><span class="icon-refresh"></span></a></li>
+			        </ul>
+				</div>
+			</div>
+		</nav>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="panel-group col-md-2" id="accordion" role="tablist" aria-multiselectable="true" > <!--左侧导航-->
+                  <div class="panel panel-info">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                      <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          <span class="icon-briefcase"></span> 人事档案 <span class="icon-angle-down"></span>
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                      <div class="panel-body">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li><a href=""><span class="icon-caret-right"></span> 员工信息</a></li>
+                            <li><a href=""><span class="icon-caret-right"></span> 人员构成</a></li>
+                            <li><a href=""><span class="icon-caret-right"></span> 信息发布</a></li>
+                            <li><a href=""><span class="icon-caret-right"></span> 离职管理</a></li>
+                            <li><a href=""><span class="icon-caret-right"></span> 工作审批</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-info">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          <span class="icon-time"></span> 考勤管理 <span class="icon-angle-down"></span>
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                      <div class="panel-body">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li><a href=""><span class="icon-caret-right"></span> 员工排班</a></li>
+                            <li><a href=""><span class="icon-caret-right"></span> 考勤汇总</a></li>
+                            <li><a href=""><span class="icon-caret-right"></span> 休假审批</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-info">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          <span class="icon-exchange"></span> 薪酬管理 <span class="icon-angle-down"></span>
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                      <div class="panel-body">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li><a href=""><span class="icon-caret-right"></span> 员工薪资</a></li>
+                            <li><a href=""><span class="icon-caret-right"></span> 奖罚管理</a></li>
+                            <li><a href=""><span class="icon-caret-right"></span> 员工福利</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-info">
+                    <div class="panel-heading" role="tab" id="headingFour">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                          <span class="icon-group"></span> 招聘管理 <span class="icon-angle-down"></span>
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                      <div class="panel-body">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li><a href=""><span class="icon-caret-right"></span> 招聘计划</a></li>
+                            <li><a href=""><span class="icon-caret-right"></span> 应聘简历</a></li>
+                            <li><a href=""><span class="icon-caret-right"></span> 面试情况</a></li>
+                            <li><a href=""><span class="icon-caret-right"></span> 招聘公告</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-info">
+                    <div class="panel-heading" role="tab" id="headingFive">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                          <span class="icon-tasks"></span> 组织架构 <span class="icon-angle-down"></span>
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                      <div class="panel-body">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li><a href=""><span class="icon-caret-right"></span> 部门管理</a></li>
+                            <li><a href=""><span class="icon-caret-right"></span> 人员调动</a></li>
+                            <li><a href=""><span class="icon-caret-right"></span> 能力鉴定</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-info">
+                    <div class="panel-heading" role="tab" id="headingSix">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                          <span class="icon-user"></span> 权限管理 <span class="icon-angle-down"></span>
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                      <div class="panel-body">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li><a href=""><span class="icon-caret-right"></span> 角色管理</a></li>
+                            <li><a href=""><span class="icon-caret-right"></span> 用户管理</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-info">
+                    <div class="panel-heading" role="tab" id="headingSix">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button"  data-parent="#accordion"  aria-expanded="false">
+                          <span class="icon-envelope"></span> 系统信息 <span class="badge" style="background-color: red;">10</span>
+                        </a>
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="panel panel-info">
+                    <div class="panel-heading" role="tab" id="headingSix">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button"  data-parent="#accordion"  aria-expanded="false">
+                          <span class="icon-signout"></span> 退出
+                        </a>
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-md-10"> <!--主页右侧内容-->
+                	<div class="container-fluid">
+                		<div class="row" style="border-bottom: 1px solid rgb(221,221,221);">
+	                    	<h3>
+	                    		<span class="icon-folder-open" style="color: forestgreen;"></span> 基本资料
+	                    		<small style>/Personal profile</small>
+	                    	</h3>      	
+	                    </div>
+	                    <br />
+	                    <div class="row">
+	                    	<div class="panel panel-default">
+	                    		<div class="panel-heading">基本信息</div>
+	                    		<div class="panel-body">
+	                    			<form class="form-horizontal">
+	                    				<div class="row">
+	                    					<div class="col-md-offset-1 col-md-6">
+	                    						<div class="form-group">
+												    <label class="col-sm-2 control-label">照片</label>
+												    <div class="col-sm-3">
+												      <p class="form-control-static"><img src="img/yijianlian.jpg" class="img-responsive" alt="Responsive image"></p>
+												    </div>
+												</div>	
+	                    					</div>	                    					
+	                    				</div>
+	                    				<div class="row">
+	                    					<div class="col-md-offset-1 col-md-6">
+	                    						<div class="form-group">
+												    <label class="col-sm-2 control-label">用户名</label>
+												    <div class="col-sm-3">
+												      <p class="form-control-static">易建联</p>
+												    </div>
+												</div>	
+	                    					</div>
+	                    					<div class="col-md-5">
+	                    						<div class="form-group">
+												    <label class="col-sm-2 control-label">用户类型</label>
+												    <div class="col-sm-3">
+												      <p class="form-control-static">管理员</p>
+												    </div>
+												</div>	                    						
+	                    					</div>
+	                    				</div>
+	                    				<div class="row">
+	                    					<div class="col-md-offset-1 col-md-6">
+	                    						<div class="form-group">
+												    <label class="col-sm-2 control-label">部门</label>
+												    <div class="col-sm-3">
+												      <p class="form-control-static">信息部</p>
+												    </div>
+												</div>		
+	                    					</div>
+	                    					<div class="col-md-5">
+	                    						<div class="form-group">
+												    <label class="col-sm-2 control-label">岗位</label>
+												    <div class="col-sm-3">
+												      <p class="form-control-static">项目经理</p>
+												    </div>
+												</div>	                    						
+	                    					</div>
+	                    				</div>
+	                    				<div class="row">
+	                    					<div class="col-md-offset-1 col-md-6">
+	                    						<div class="form-group">
+												    <label class="col-sm-2 control-label">员工状态</label>
+												    <div class="col-sm-3">
+												      <p class="form-control-static">在职</p>
+												    </div>
+												</div>	
+	                    					</div>
+	                    					<div class="col-md-5">
+	                    						<div class="form-group">
+												    <label class="col-sm-2 control-label">员工类型</label>
+												    <div class="col-sm-3">
+												      <p class="form-control-static">正式工</p>
+												    </div>
+												</div>		                    						
+	                    					</div>
+	                    				</div>
+	                    				<div class="row">
+	                    					<div class="col-md-offset-1 col-md-6">
+	                    						<div class="form-group">
+												    <label class="col-sm-2 control-label">性别</label>
+												    <div class="col-sm-3">
+												      <p class="form-control-static">男</p>
+												    </div>
+												</div>		
+	                    					</div>
+	                    					<div class="col-md-5">
+	                    						<div class="form-group">
+												    <label class="col-sm-2 control-label">邮箱</label>
+												    <div class="col-sm-3">
+												      <p class="form-control-static">123456789@qq.com</p>
+												    </div>
+												</div>		                    						
+	                    					</div>
+	                    				</div>
+										<div class="row">
+											<div class="col-md-offset-1 col-md-6">
+												<div class="form-group">
+												    <label class="col-sm-2 control-label">手机号</label>
+												    <div class="col-sm-3">
+												      <p class="form-control-static">969368</p>
+												    </div>
+												</div>
+											</div>
+											<div class="col-md-5">
+												<div class="form-group">
+												    <label class="col-sm-2 control-label">地址</label>
+												    <div class="col-sm-3">
+												      <p class="form-control-static">广州市番禺区</p>
+												    </div>
+												</div>
+											</div>
+										</div>
+										<br />
+										<div class="row">
+											<div class="col-md-3 col-md-offset-4">
+												<a class="btn btn-primary btn-block" data-toggle="modal" data-target="#myModal"><span class="icon-edit"></span> 修改资料</a>
+												<a href="javascript:history.go(-1);" class="btn btn-default btn-block"><span class="icon-double-angle-up"></span> 返回上一页</a>
+											</div>
+										</div>
+										
+	                    			</form>
+	                    			<br />
+	                    		</div>
+	                    	</div>
+	                    </div>
+                	</div>
+                </div>	
+                
+            </div>  <!--row--> 
+            
+            <div class="row"> <!--底部版权-->
+            	<div class="col-md-12 text-center navbar-static-bottom" style="background: rgb(153,153,153); color: black; padding:5px 0;">
+            		Copyright 2017 CHOU TAI FOOK All Rights Reserved.
+            	</div>
+            </div>
+	    	</div>	
+			<!-- Modal -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title" id="myModalLabel">修改信息</h4>
+			      </div>
+			      <div class="modal-body">
+			        <form class="form-horizontal col-sm-offset-1">
+	                      <div class="form-group">
+	                        <label for="name" class="col-sm-2 control-label">用户名</label>
+	                        <div class="col-sm-8">
+	                          <input type="text" class="form-control" id="name" placeholder="输入用户名称">
+	                        </div>
+	                      </div>
+	                      <div class="form-group">
+						    <label class="col-sm-2 control-label">性别</label>
+						    <div class="col-sm-8">
+						      	<label class="radio-inline">
+								  <input type="radio" name="sex" id="male" value="option1"> 男
+								</label>
+								<label class="radio-inline">
+								  <input type="radio" name="sex" id="female" value="option2"> 女
+								</label>
+						    </div>	
+						  </div>
+	                      <div class="form-group">
+	                        <label for="email" class="col-sm-2 control-label">邮箱</label>
+	                        <div class="col-sm-8">
+	                          <input type="email" class="form-control" id="email" placeholder="输入邮箱地址">
+	                        </div>
+	                      </div>
+	                      <div class="form-group">
+	                        <label for="tel" class="col-sm-2 control-label">手机号</label>
+	                        <div class="col-sm-8">
+	                          <input type="text" class="form-control" id="tel" placeholder="输入手机号">
+	                        </div>
+	                      </div>
+	                      <div class="form-group">
+	                        <label for="address" class="col-sm-2 control-label">地址</label>
+	                        <div class="col-sm-8">
+	                          <input type="text" class="form-control" id="address" placeholder="输入地址信息">
+	                        </div>
+	                      </div>
+	                      <br>
+	                      <div class="form-group">
+	                        <div class="col-sm-offset-4 col-sm-8">
+	                          <button type="submit" class="btn btn-primary">保存</button>
+	                          <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+	                        </div>
+	                      </div>
+	                </form>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+		
+		<script src="jquery/jquery.min.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+	</body>
+</html>
